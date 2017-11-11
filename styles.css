@@ -18,25 +18,16 @@ body {
     flex: 6;
     color: white;
 }
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-.dropdown .dropbtn {
-  font-size: 16px; 
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-}
+
 .vehicle-item {
     color: white;
 	padding-right: 15px;
     background-color: black;
     font-size: 12px;
     font-weight: bold;
-   }
+    font-family: 'Roboto', sans-serif;
+
+}
 
 .menu-item {
 	padding: 15px 0px 0px 5px;
