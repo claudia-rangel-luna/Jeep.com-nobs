@@ -1,0 +1,351 @@
+body {
+    margin: 0px 0px 10px 0px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    font-family: 'Roboto-regular', sans-serif;
+}
+
+.navbar-logo {
+    padding-top: 5px;
+    height: 24px;
+    padding-left: 15px;
+}
+
+.navbar-item {
+    display: flex;
+    background-color: black;
+    flex: 6;
+    color: white;
+}
+
+.vehicle-item {
+    color: white;
+    padding-right: 15px;
+    background-color: black;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.vehicle-item i {
+    font-size: 1.5em;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.menu-item {
+    display: flex;
+    padding: 15px 5px 15px 10px;
+    font-size: 12px;
+    background-color: #E7E7E7;
+    align-items: center;
+    width: 60px;
+}
+
+.menu-item i {
+    padding-left: 5px;
+    font-size: 14px;
+}
+.overview {
+    display: flex;
+    background-color: #E7E7E7;
+    height: 45px;
+
+}
+.overview-menu-bars {
+    display: flex;
+    align-items: center;
+    margin-left: -5px;
+    align-items: center;
+    padding-left: 15px;
+}
+.overview-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content:  left;
+}
+
+
+.overview-wrangler {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    font-family: 'Roboto-regular', sans-serif;
+    font-size: 9px;
+    padding-left: 20px;
+    padding-top: 7px;
+}
+
+.overview-name {
+    display: flex;
+    flex: 1;
+    font-family: 'Roboto-bold', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    
+   
+}
+
+.overview-right {
+    display: flex;
+    align-items: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.carousel-tabs {
+    display: flex;
+    background-color: #3E3E3E;
+    justify-content: space-between;
+}
+
+.carousel-tab-item.selected {
+    background-color: #FEB92C;
+}
+
+.carousel-tab-item {
+    display: flex;
+    flex: 1;
+    border-right: 1px solid white;
+    height: 10px;
+}
+
+.carousel-content {
+    background-color: black;
+}
+
+.carousel-image {
+    width: 385px;
+    height: 145px;
+}
+
+.carousel-content-image {
+    height: 170px;
+}
+
+.carousel-content-info {
+    display: flex;
+    justify-content: center;
+    padding: 15px 15px 35px 15px;
+    color: white;
+    text-align: center;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 30px;
+}
+
+.carousel-content-black img {
+    height: 65px;
+    width: 115px;
+}
+
+.carousel-info {
+    padding-bottom: 5px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    font-family: 'Roboto-regular', sans-serif;
+}
+
+
+.carousel-info-list {
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.carousel-info-paragraph {
+    padding: 20px;
+    font-family: 'Roboto-regular', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.carousel-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 18px 30px 18px;
+}
+
+.main-content {
+    font-family: 'Roboto-regular', sans-serif;
+}
+
+.main-content-msrp {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold;
+}
+
+.main-content-price {
+    font-size: 32px;
+    line-height: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.main-content-offer {
+    font-size: 12px;
+    line-height: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #565656;
+    padding-bottom: 15px;
+}
+
+.main-content-month {
+    font-family: 'Roboto', sans-serif;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.main-content-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color: #878787;
+}
+
+.main-contect-text-box,
+.main-content-zip {
+    font-size: 12px;
+    line-height: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.main-content-lease {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.main-content-amount {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    float: left;
+    padding-right: 5px;
+}
+
+
+
+.info-buttons i {
+    padding-left: 10px;
+}
+
+.info-button-detail {
+    display: flex;
+    height: 40px;
+    font-size: 14px;
+    font-family: 'Proxima Nova', sans-serif;
+    background-color: #FEB92C;
+    color: black;
+    border-radius: 2px;
+    margin: 10px 6px 0px 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-button-detail:hover {
+    background-color: #e4a627;
+}
+
+.button-content-left {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.button-content-right {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.info-button-detail .fa-wrench {
+    color: #7F5C16;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.search-button-build {
+    font-size: 14px;
+    line-height: 14px;
+    font-family: 'Proxima Nova', sans-serif;
+    background-color: #636363;
+    color: white;
+    border-radius: 2px;
+    padding: 13px 0px 7px 0px;
+    margin: 10px 6px 0px 6px;
+    display: flex
+}
+
+.search-button-build:hover {
+    background-color:
+}
+
+.search-button-build .fa-search {
+    color: #B1B1B1;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 20px;
+    transform: rotate(90deg);
+}
+
+.slideshow {
+    padding: 30px 18px 30px 18px;
+}
+
+.slideshow-image {
+    display: flex;
+    padding-bottom: 20px 0px 20px 0px;
+}
+
+.slideshow-image img {
+    height: 127px;
+    width: 127px;
+    padding-right: 20px;
+    padding-top: 40px;
+}
+
+.slideshow-header {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.slideshow-paragraph {
+    font-family: 'Roboto-regular', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+}
+
+.slideshow-paragraph .sup {
+    position: relative;
+    font-size: 70%;
+    line-height: 0;
+    vertical-align: baseline;
+    bottom: -2px;
+    left: -4px;
+}
