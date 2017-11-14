@@ -1,4 +1,5 @@
 body {
+
     margin: 0px 0px 10px 0px;
 }
 
@@ -11,17 +12,75 @@ body {
     font-family: 'Roboto-regular', sans-serif;
 }
 
+.navbar-padding-left {
+    flex: 1;
+}
+
 .navbar-logo {
     height: 38px;
+    
 }
+
 .navbar-item {
-        color: white;
-        padding-left: 15px;
-        background-color: black;
-        font-size: 12px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bolder;
-    }
+    color: white;
+    padding-left: 20px;
+    background-color: black;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.fa-map-marker {
+    padding-right: 5px;
+    color: #7F7F7F;
+    font-weight: 20px;
+}
+
+.fa-wrench {
+    padding-right: 5px;
+    color: #7F7F7F;
+    font-weight: 20px;
+}
+
+.navbar-item-jeep {
+    display: inline-flex;
+    color: white;
+    align-items: center;
+    padding-top: 2px;
+    padding-left: 15px;
+    background-color: black;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.sup {
+    position: relative;
+    font-size: 70%;
+    line-height: 0;
+    vertical-align: baseline;
+    bottom: -4px;
+    color: white;
+    padding-right: 3px;
+}
+
+.navbar-item i {
+    font-size: 1.5em;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.navbar-item-left {
+    display: flex;
+    flex: 4;
+}
+
+.navbar-item-right {
+    display: inline-flex;
+    margin-right: 90px;
+}
 
 @media screen and (max-width: 400px) {
     .navbar {
@@ -29,7 +88,7 @@ body {
     }
     .navbar-logo {
         height: 24px;
-        padding-left: 15px;
+     
     }
 
     .navbar-logo-item {
@@ -43,7 +102,7 @@ body {
     .navbar-item {
         padding-left: 0px;
         padding-right: 15px;
-       
+        font-size: 12px;
     }
 
     .navbar-item i {
@@ -51,8 +110,16 @@ body {
         padding-left: 10px;
         font-weight: bold;
     }
+    .navbar-item-jeep {
+        display: none;
+    }
     .navbar-item.desktop-only {
         display: none;
+    }
+    .navbar-item-left,
+    .navbar-item {
+        display: flex;
+        padding-left: 50px;
     }
     .menu-item {
         display: flex;
@@ -133,6 +200,18 @@ body {
         line-height: 30px;
     }
 
+    .bubble {
+        width: 10px;
+        height: 10px;
+        background: lightgrey;
+        border-radius: 50%;
+        color: black;
+        font-size: 8px;
+        line-height: 8px;
+        padding-top: 3px;
+        margin-left: 1px;
+        display: inline-block;
+    }
 
     .carousel-buttons {
         display: flex;
@@ -147,7 +226,7 @@ body {
     .carousel-button-detail {
         font-size: 14px;
         font-family: 'Proxima Nova', sans-serif;
-        background-color: #FEB92C;
+        background-color: #FFBA00;
         color: black;
         border-radius: 2px;
         padding: 14px 30px 12px 25px;
@@ -155,7 +234,9 @@ body {
         justify-content: center;
         align-items: center;
     }
-
+    .carousel-button-detail:hover {
+        background-color: #e5a700;
+    }
 
 
     .carousel-button-build {
@@ -169,7 +250,9 @@ body {
         justify-content: center;
         align-items: center;
     }
-
+    .carousel-button-build:hover {
+        background-color: #595959;
+    }
 
 
     .image-gallery {
@@ -206,6 +289,7 @@ body {
     .image-gallery-item-link:hover {
         text-decoration: underline;
     }
+
 
     .image-list-header {
         font-family: 'Proxima Nova', sans-serif;
