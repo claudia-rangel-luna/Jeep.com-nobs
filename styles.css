@@ -18,10 +18,10 @@ body {
 
 .navbar-logo {
     height: 38px;
-    
 }
 
 .navbar-item {
+    display: flex;
     color: white;
     padding-left: 20px;
     background-color: black;
@@ -29,6 +29,7 @@ body {
     line-height: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
+    padding-right: 20px;
 }
 
 .fa-map-marker {
@@ -48,7 +49,7 @@ body {
     color: white;
     align-items: center;
     padding-top: 2px;
-    padding-left: 15px;
+    padding-left: 10px;
     background-color: black;
     font-size: 14px;
     line-height: 20px;
@@ -68,7 +69,7 @@ body {
 
 .navbar-item i {
     font-size: 1.5em;
-    padding-left: 10px;
+    padding-left: 5px;
     font-weight: bold;
 }
 
@@ -82,27 +83,212 @@ body {
     margin-right: 90px;
 }
 
+.carousel-image,
+.carousel-image .desktop-only {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-content {
+    position: relative;
+    object-fit: cover;
+}
+
+.carousel-content-info {
+    display: flex;
+    justify-content: left;
+    padding: 30px 15px 25px 15px;
+    color: white;
+    text-align: left;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    width: 550px;
+}
+
+.carousel-content-black img {
+    height: 91px;
+}
+
+.carousel-disclosure {
+    font-family: 'Roboto-regular', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 30px;
+}
+
+.carousel-info {
+    font-size: 12px;
+    line-height: 17px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+.carousel-info .sup {
+    position: relative;
+    font-size: 70%;
+    line-height: 0;
+    vertical-align: baseline;
+    bottom: -2px;
+}
+
+.bubble {
+    width: 10px;
+    height: 10px;
+    background: lightgrey;
+    border-radius: 50%;
+    color: black;
+    font-size: 8px;
+    line-height: 8px;
+    padding-top: 3px;
+    margin-left: 1px;
+    display: inline-block;
+}
+
+.carousel-info-list {
+
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.carousel-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.carousel-buttons i {
+    padding-left: 10px;
+}
+
+.carousel-button-detail {
+    font-size: 14px;
+    font-family: 'Proxima Nova', sans-serif;
+    background-color: #FFBA00;
+    color: black;
+    border-radius: 2px;
+    padding: 14px 30px 12px 25px;
+    margin: 10px 6px 0px 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-button-detail:hover {
+    background-color: #e5a700;
+}
+
+
+.carousel-button-build {
+    font-size: 14px;
+    font-family: 'Proxima Nova', sans-serif;
+    background-color: #636363;
+    color: white;
+    border-radius: 2px;
+    padding: 14px 30px 12px 25px;
+    margin: 10px 6px 0px 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-button-build:hover {
+    background-color: #595959;
+}
+
+.image-gallery {
+    display: flex;
+    background-color: #D1D1D1;
+    padding: 20px 0px 20px 20px;
+    flex-direction: row;
+}
+
+.image-gallery-container {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+
+.image-gallery-item {
+    /*padding-top: 20px;*/
+    padding-right: 20px;
+}
+
+.image-gallery-item-image img {
+    /*width: 345px;*/
+}
+
+.image-gallery-item-link {
+    height: 18px;
+    color: white;
+    background-color: #212121;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding: 5px;
+    text-align: right;
+}
+
+.image-gallery-item-link i {
+    color: #FEB92C;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.image-gallery-item-link:hover {
+    text-decoration: underline;
+}
+
+.image-list-header {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.image-list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 400px) {
     .navbar {
         height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
+    .navbar-padding-left {
+        flex: 1;
+    }
+
     .navbar-logo {
         height: 24px;
-     
+        padding-right: 15px;
     }
 
     .navbar-logo-item {
         display: flex;
         background-color: black;
-        flex: 6;
+        margin-right: 110px;
         color: white;
     }
 
 
     .navbar-item {
-        padding-left: 0px;
-        padding-right: 15px;
+        color: white;
+        padding-left: 20px;
+        background-color: black;
         font-size: 12px;
+        line-height: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;
+        display: inline-flex;
     }
 
     .navbar-item i {
@@ -116,10 +302,9 @@ body {
     .navbar-item.desktop-only {
         display: none;
     }
-    .navbar-item-left,
-    .navbar-item {
-        display: flex;
-        padding-left: 50px;
+    .navbar-item-left {
+        display: inline-flex;
+        /*padding-left: 50px;*/
     }
     .menu-item {
         display: flex;
@@ -129,7 +314,10 @@ body {
         align-items: center;
         width: 60px;
     }
-
+    .navbar-item-right {
+        display: inline-flex;
+        margin-right: 10px;
+    }
     .menu-item i {
         padding-left: 5px;
         text-align: center;
@@ -141,6 +329,7 @@ body {
         background-color: #3E3E3E;
         justify-content: space-between;
     }
+
 
     .carousel-tab-item.selected {
         background-color: #FEB92C;
@@ -154,6 +343,7 @@ body {
     }
 
     .carousel-content {
+        position: static;
         background-color: black;
     }
 
@@ -174,13 +364,19 @@ body {
         text-align: center;
         font-family: 'Proxima Nova', sans-serif;
         font-size: 30px;
+        position: static;
+        top: 0px;
+        right: 0px;
+        width: auto;
     }
-
+    .carousel-disclosure {
+        display: none;
+    }
     .carousel-content-black img {
         height: 65px;
         width: 115px;
     }
-
+    .carousel-content-black img .desktop-only {}
     .carousel-info {
         font-size: 12px;
         height: 17px;
@@ -198,6 +394,9 @@ body {
     .carousel-info-list {
         margin-bottom: 20px;
         line-height: 30px;
+
+        font-size: 30px;
+        font-weight: normal;
     }
 
     .bubble {
@@ -214,101 +413,34 @@ body {
     }
 
     .carousel-buttons {
-        display: flex;
+
         flex-direction: column;
-        align-items: center;
-    }
-
-    .carousel-buttons i {
-        padding-left: 10px;
-    }
-
-    .carousel-button-detail {
-        font-size: 14px;
-        font-family: 'Proxima Nova', sans-serif;
-        background-color: #FFBA00;
-        color: black;
-        border-radius: 2px;
-        padding: 14px 30px 12px 25px;
-        margin: 10px 6px 0px 6px;
-        justify-content: center;
-        align-items: center;
-    }
-    .carousel-button-detail:hover {
-        background-color: #e5a700;
-    }
-
-
-    .carousel-button-build {
-        font-size: 14px;
-        font-family: 'Proxima Nova', sans-serif;
-        background-color: #636363;
-        color: white;
-        border-radius: 2px;
-        padding: 14px 30px 12px 25px;
-        margin: 10px 6px 0px 6px;
-        justify-content: center;
-        align-items: center;
-    }
-    .carousel-button-build:hover {
-        background-color: #595959;
     }
 
 
     .image-gallery {
-        /*display: flex;*/
-        background-color: #D1D1D1;
-        padding: 0px 0px 20px 20px;
+
+
         flex-direction: column;
     }
-
-
     .image-gallery-item {
         padding-top: 20px;
-        padding-right: 20px;
     }
-    .image-gallery-item-image img {
-        width: 345px;
-    }
-
-    .image-gallery-item-link {
-        height: 18px;
-        color: white;
-        background-color: #212121;
-        font-family: 'Roboto', sans-serif;
-        font-size: 14px;
-        padding: 5px;
-        text-align: right;
-    }
-    .image-gallery-item-link i {
-        color: #FEB92C;
-        padding-left: 10px;
-        align-items: center;
-    }
-
-    .image-gallery-item-link:hover {
-        text-decoration: underline;
-    }
-
-
     .image-list-header {
-        font-family: 'Proxima Nova', sans-serif;
+
         font-size: 18px;
         text-align: center;
-        margin-top: 50px;
-        margin-bottom: 5px;
     }
-    .sup {
-        position: relative;
-        font-size: 65%;
-        line-height: 0;
-        vertical-align: baseline;
-        bottom: -.25em;
-        margin-left: -.30em;
+    .image-list-container {
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center;
+        align-items: center;*/
     }
 
     .image-list {
         display: flex;
+        /*flex-direction: row;*/
         padding: 25px 15px 25px 15px;
     }
 
